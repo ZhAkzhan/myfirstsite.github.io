@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+/* Общий стиль */
+body {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(2, 102, 0, 1) 30%, rgba(0, 255, 120, 1) 70%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+    font-family: 'VT323', monospace;
+    margin: 0;
+    padding-top: 70px;
+    text-align: center;
+}
+
+/* Хедер как на YouTube */
+header {
+    position: fixed;
+    top: 0;
+    left: -30px;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 4px 10px rgba(0, 255, 120, 0.5);
+    z-index: 1000;
+}
+
+/* Логотип */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px lime;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Навигация */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    color: aliceblue;
+    font-size: 1.2em;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav li:hover {
+    background: rgba(0, 255, 120, 0.2);
+    text-shadow: 0px 0px 10px #00ffee;
+}
+
+/* Иконки справа */
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons i {
+    color: white;
+    font-size: 1.5em;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header-icons i:hover {
+    color: lime;
+    text-shadow: 0px 0px 10px lime;
+}
+
+/* Контейнер книги */
+.book-container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 120, 0.5);
+}
+
+/* Главы */
+.chapter {
+    display: none;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.chapter.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Кнопки */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    background: linear-gradient(45deg, lime, cyan);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, cyan, lime);
+    box-shadow: 0px 0px 15px lime;
+}

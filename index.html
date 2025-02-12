@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSecurity Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Хедер -->
+    <header>
+        <a href="#" class="logo" style="padding-left: 30px;">
+            
+            CyberSecurity
+        </a>
+        <nav>
+            <ul>
+                <li onclick="goToChapter(1)">Chapter 1</li>
+                <li onclick="goToChapter(2)">Chapter 2</li>
+                <li onclick="goToChapter(3)">Chapter 3</li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </header>
+
+    <!-- Контент книги -->
+    <main class="content">
+        <div class="book-container">
+            <div class="chapter active" id="chapter1">
+                <h2>Chapter 1: The Basics of Hacking</h2>
+                <p>Hacking is not just about breaking into systems. It is an art of understanding how things work and using that knowledge creatively.</p>
+            </div>
+            
+            <div class="chapter" id="chapter2">
+                <h2>Chapter 2: Tools of a Hacker</h2>
+                <p>There are various tools like Kali Linux, Wireshark, Metasploit, and more that help in ethical hacking and penetration testing.</p>
+            </div>
+
+            <div class="chapter" id="chapter3">
+                <h2>Chapter 3: Stay Anonymous</h2>
+                <p>Using VPNs, Tor, and other anonymity tools, hackers can protect their identity while exploring cybersecurity.</p>
+            </div>
+
+            <div class="nav-buttons">
+                <button onclick="prevChapter()">← Previous</button>
+                <button onclick="nextChapter()">Next →</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
